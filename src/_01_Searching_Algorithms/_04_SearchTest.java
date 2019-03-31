@@ -11,6 +11,9 @@ class _04_SearchTest {
 	@Test
 	public void testLinearSearch() {
 		//1. use the assertEquals method to test your linear search method.
+		String[] x = {"Rat", "hat", "mat", "sock", "Rock", "dog", "no", "more", "ideas"};
+		int y = 5;
+		assertEquals(_00_LinearSearch.linearSearch(x, "dog"), y);
 	}
 
 	@Test
@@ -29,5 +32,8 @@ class _04_SearchTest {
 	public void testExponentialSearch() {
 		//4. use the assertEquals method to test your exponential search method.
 		//   remember that the array must be sorted
+		int[] x = {0, 1, 5, 34, 345, 546, 547, 576, 35666, 1235573};
+		int y = 3;
+		assertEquals(_03_ExponentialSearch.exponentialSearch(x, 34), y);
 	}
 }
